@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html UTF="UTF-8">
+    <head>
+        <title>Number Guesser</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../Js-Projects/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Sandbox</h1>
+            <div class="container" id="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="dropDown" id="dropDown">
+                    <ul>
+                        <li><a href="../Js-Projects/index.html">Projekt 1</a></li>
+                        <li><a href="">Projekt 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container_main" id="con1">
+                <h2>Errate die Zahl von 0-100</h3>
+                <div id="second-con" style="width: 80%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+                    <div style="margin-bottom: 10px;">
+                        <input type="number" id="numberInput" min="0" max="100">
+                        <button id="submit" class="submit">Submit</button>
+                    </div>
+                    <p id="textfield" class="text"type="text">Hier kommt dein Ergebnis</p>
+                    <button class="submit" id="reset">Reset</button>
+                    <p id="versuche">Hier stehen deine Versuche</p>
+                </div>
+               
+            </div>
+        </main>
+
+
+        <script src="../Js-Projects/script.js"></script>
+    </body>
+</html>

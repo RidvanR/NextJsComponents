@@ -1,0 +1,51 @@
+body {
+    overflow: hidden;
+    background-color: #483D8B;
+}
+main {
+    height: 100vh;
+    width: auto;
+    background-color: #483D8B;
+    margin-top: 0px;
+   
+}
+
+.container_main {
+    width: 500px;
+    height: 500px;
+    background-color: #2d2180;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.container_main h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit {
+    padding: 0.5em;
+    color: white;
+    background-color: purple;
+    border: 1px solid purple;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.submit:active {
+    transform: scale(0.85);
+}
+.submit:hover {
+    background-color: rgb(140, 18, 140);
+}
+
+.text {
+    color: white;
+}
