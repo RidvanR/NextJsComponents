@@ -1,12 +1,16 @@
 body {
     overflow: hidden;
     background-color: #483D8B;
+    margin: 0;
+    padding: 0;
 }
 main {
     height: 100vh;
     width: auto;
-    background-color: #483D8B;
+    background-color: #1e1d26;
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
    
 }
 
@@ -30,6 +34,10 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#versuche {
+    color: white;
+}
+
 .submit {
     padding: 0.5em;
     color: white;
@@ -48,4 +56,71 @@ main {
 
 .text {
     color: white;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0,-11px) rotate(45deg);
+    z-index: 1;
+}
+
+.change .bar1 {
+    transform: translate(0,11px) rotate(-45deg);
+    z-index: 1;
+}
+
+header {
+    background-color: #332975;
+    margin-top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    color: rgb(241, 235, 235);
+    font-family: monospace;
+    font-size: 2rem;
+    margin-left: 10px;
+
+}
+
+.dropDown {
+    min-width: 160px;
+    background-color: rgb(202, 202, 202);
+    z-index: 0;
+    position: absolute;
+    right: 0rem;
+    display: none;
+    z-index: 1;
+    overflow: auto;
+}
+
+.show {display: block;}
+
+.dropDown li {
+    margin-bottom: 0.5rem;
+
 }

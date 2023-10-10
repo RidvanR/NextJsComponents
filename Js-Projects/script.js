@@ -8,9 +8,6 @@ container.addEventListener('click', () => {
     dropDown.classList.toggle("show");
 })
 
-
-
-
 let input = document.getElementById("numberInput");
 let submit = document.getElementById("submit");
 let textfield = document.getElementById("textfield");
@@ -30,6 +27,7 @@ submit.addEventListener('click', () => {
             submit.disabled = true;
             submit.style.opacity = 0.3;
         }  else (value < randomNumber) ? textfield.innerHTML = "zu wenig" : textfield.innerHTML = "zu hoch"
+        document.getElementById("versuche").innerHTML = "Deine Versuche " + versuche
 })
 
 
@@ -40,6 +38,7 @@ reset.addEventListener('click', () => {
     randomNumber = Math.floor((Math.random() * 100) + 1);
     document.getElementById("con1").style.background = "#2d2180"
     submit.style.opacity = 1;
+    document.getElementById("versuche").innerHTML = "Hier stehen deine Verusche"
 
 
 })
